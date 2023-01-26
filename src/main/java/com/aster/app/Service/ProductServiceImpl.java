@@ -31,10 +31,16 @@ public class ProductServiceImpl implements ProductServices
 	}
 	public boolean updateProductQuantity(int product_id,int quantity)
 	{
-		Product product=productRepo.findById(product_id).get();
-		product.setQuantity(quantity);
-		productRepo.save(product);
-		
-		return true;
+		if(quantity>0)
+		{
+			Product product=productRepo.findById(product_id).get();
+			product.setQuantity(quantity);
+			productRepo.save(product);
+			return true;
+		}
+		else
+		{
+			throw new IllegalArgumentException("Quantity cannot be less than 1");
+		}
 	}
 }

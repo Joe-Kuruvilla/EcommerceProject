@@ -1,10 +1,8 @@
 package com.aster.app.Entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
-//import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -21,9 +19,10 @@ import lombok.NoArgsConstructor;
 public class Cart 
 {
 	@Id
-	@GeneratedValue
 	private int id;
-//	@OneToMany(cascade=CascadeType.ALL)
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<Product> products=new ArrayList<>();
+	@OneToMany
+	private List<Product> products;
 }
+
+// Cart entity has 2 attributes, one is the cartId and a List of products
+// One cart can have many products and so one to many mapping is used.

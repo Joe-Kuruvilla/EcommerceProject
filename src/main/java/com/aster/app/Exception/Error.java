@@ -14,3 +14,4 @@ public class Error {
 	private String message;
 	private String details;
 }
+// This class is for making custom error messages
