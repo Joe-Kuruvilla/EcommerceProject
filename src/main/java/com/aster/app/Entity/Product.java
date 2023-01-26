@@ -26,3 +26,4 @@ public class Product
 	private int quantity;
 	
 }
+//Product entity has 6 attributes and sku is the primary key

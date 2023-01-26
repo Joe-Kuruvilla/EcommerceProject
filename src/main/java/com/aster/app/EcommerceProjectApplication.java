@@ -20,5 +20,7 @@ public class EcommerceProjectApplication {
 	LocalValidatorFactoryBean lvfb=new LocalValidatorFactoryBean();
 	lvfb.setValidationMessageSource(ms);
 	return lvfb;
+	
+	//This bean is created so that we can give custom messages for validation violations
 }
 }

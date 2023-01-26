@@ -11,3 +11,9 @@ public interface ProductServices
 	public List<Product> getAllProducts();
 	public boolean updateProductQuantity(int product_id,int quantity);
 }
+/* Four Functionalities:
+ *1. Creating new products
+ *2. Finding product by ID
+ *3. Listing all the available products in the shop
+ *4. Updating the quantity of a particular product
+ */

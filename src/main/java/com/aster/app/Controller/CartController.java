@@ -5,12 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aster.app.Entity.Cart;
@@ -20,7 +21,7 @@ import com.aster.app.Service.CartServiceImpl;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/ecommerce")
+@RequestMapping("/cart")
 public class CartController {
 	@Autowired
 	CartServiceImpl cartServiceImpl;
@@ -29,30 +30,14 @@ public class CartController {
 	public ResponseEntity<?> newCart(@Valid @RequestBody Cart cart) {
 		return new ResponseEntity<Cart>(cartServiceImpl.createCart(cart), HttpStatus.CREATED); 
 	}
-	@GetMapping("/getCartDetails/{cartId}")
+	@GetMapping("/{cartId}")
 	public ResponseEntity<?> displayAllItems(@Valid @PathVariable int cartId)
 	{
 		return new ResponseEntity<List<Product>>(cartServiceImpl.getAllItems(cartId), HttpStatus.OK);
 	}	
-	@PostMapping("/update/{productId}/cart/{cartId}/quantity/{quantity}")
-	public ResponseEntity<?> increase(@Valid @PathVariable int productId, @Valid @PathVariable int cartId, @Valid @PathVariable int quantity)
+	@PutMapping("/{productId}")
+	public ResponseEntity<?> modifyCart(@Valid @PathVariable int productId, @Valid @RequestParam("cartId") int cartId, @Valid @RequestParam("quantity") int quantity)
 	{
 		return new ResponseEntity<Boolean>(cartServiceImpl.modifyCart(productId, cartId, quantity), HttpStatus.OK);
 	}
-	
-	
-//	@PostMapping("/update/decreaseQuantity/{productId}/cart/{cartId}")
-//	public ResponseEntity<?> decrease(@Valid @PathVariable int productId, @Valid @PathVariable int cartId)
-//	{
-//		return new ResponseEntity<Boolean>(cartServiceImpl.decreaseQuantity(productId, cartId), HttpStatus.OK);
-//	}
-//	@DeleteMapping("/delete/{productId}/cart/{cartId}")
-//	public ResponseEntity<?> deleteProduct(@Valid @PathVariable int productId, @Valid @PathVariable int cartId)
-//	{
-//		return new ResponseEntity<Boolean>(cartServiceImpl.removeProduct(productId, cartId), HttpStatus.OK);
-//	}
-//	@PostMapping("/addProduct/{productId}/cart/{cartId}")
-//	public ResponseEntity<?> addNewProduct(@Valid @PathVariable int productId, @Valid @PathVariable int cartId) {
-//		return new ResponseEntity<Boolean>(cartServiceImpl.addProduct(productId, cartId), HttpStatus.CREATED); 
-//	}
 }
