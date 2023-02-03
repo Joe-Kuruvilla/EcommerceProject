@@ -1,0 +1,15 @@
+2023-02-03T13:08:13.750+05:30  INFO 9132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-03T13:08:13.758+05:30  INFO 9132 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-02-03T13:08:13.885+05:30  INFO 9132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-03T13:08:13.886+05:30  INFO 9132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-03T13:08:13.959+05:30  INFO 9132 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03T13:08:14.020+05:30  INFO 9132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-03T13:08:14.020+05:30  INFO 9132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 938 ms
+2023-02-03T13:08:14.095+05:30  INFO 9132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-02-03T13:08:14.142+05:30  INFO 9132 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51b12213
+2023-02-03T13:08:14.142+05:30  INFO 9132 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-02-03T13:08:14.354+05:30  INFO 9132 --- [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-03T13:08:14.462+05:30  INFO 9132 --- [restartedMain] liquibase.changelog                      : Reading from myecommercewebsitep.DATABASECHANGELOG
+2023-02-03T13:08:14.540+05:30  INFO 9132 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-02-03T13:08:14.577+05:30  INFO 9132 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03T13:08:14.585+05:30  WARN 9132 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
