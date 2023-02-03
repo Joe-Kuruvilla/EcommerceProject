@@ -1,0 +1,59 @@
+2023-02-03T13:08:14.601+05:30  INFO 9132 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-03T13:08:14.786+05:30  INFO 9132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03T13:08:14.787+05:30  INFO 9132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T13:08:14.947+05:30  INFO 1912 --- [restartedMain] c.aster.app.EcommerceProjectApplication  : Starting EcommerceProjectApplication using Java 17.0.5 with PID 1912 (C:\Users\joeku\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\Phase2EcommerceProject\target\classes started by joeku in C:\Users\joeku\Documents\workspace-spring-tool-suite-4-4.17.0.RELEASE\Phase2EcommerceProject)
+2023-02-03T13:08:14.954+05:30  INFO 1912 --- [restartedMain] c.aster.app.EcommerceProjectApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-02-03T13:08:15.050+05:30  INFO 1912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-03T13:08:15.051+05:30  INFO 1912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-03T13:08:15.152+05:30  WARN 9132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03T13:08:15.354+05:30  INFO 9132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@439f2c37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f1df1f4, org.springframework.security.web.context.SecurityContextHolderFilter@1f2cc71, org.springframework.security.web.header.HeaderWriterFilter@1d68f6a0, org.springframework.security.web.authentication.logout.LogoutFilter@1c936c45, com.aster.app.Config.JwtAuthenticationFilter@a44dd98, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@356ed33f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fe9fec4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66103dc9, org.springframework.security.web.session.SessionManagementFilter@db55b56, org.springframework.security.web.access.ExceptionTranslationFilter@d68fc7, org.springframework.security.web.access.intercept.AuthorizationFilter@1a1c337f]
+2023-02-03T13:08:15.487+05:30  INFO 9132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-03T13:08:15.510+05:30  INFO 9132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-03T13:08:15.525+05:30  INFO 9132 --- [restartedMain] c.aster.app.EcommerceProjectApplication  : Started EcommerceProjectApplication in 2.719 seconds (process running for 425.286)
+2023-02-03T13:08:15.531+05:30  INFO 9132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-03T13:08:15.731+05:30  INFO 1912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-03T13:08:15.788+05:30  INFO 1912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2023-02-03T13:08:16.322+05:30  INFO 1912 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-03T13:08:16.370+05:30  INFO 1912 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-02-03T13:08:16.659+05:30  INFO 1912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-03T13:08:16.670+05:30  INFO 1912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-03T13:08:16.670+05:30  INFO 1912 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-03T13:08:16.730+05:30  INFO 1912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-03T13:08:16.734+05:30  INFO 1912 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1682 ms
+2023-02-03T13:08:16.831+05:30  INFO 1912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-03T13:08:17.121+05:30  INFO 1912 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e4d421
+2023-02-03T13:08:17.124+05:30  INFO 1912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-03T13:08:17.387+05:30  INFO 1912 --- [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2023-02-03T13:08:17.815+05:30  INFO 1912 --- [restartedMain] liquibase.changelog                      : Reading from myecommercewebsitep.DATABASECHANGELOG
+2023-02-03T13:08:17.904+05:30  INFO 1912 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-02-03T13:08:17.982+05:30  INFO 1912 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-03T13:08:18.031+05:30  INFO 1912 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-03T13:08:18.182+05:30  WARN 1912 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-03T13:08:18.299+05:30  INFO 1912 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-02-03T13:08:19.104+05:30  INFO 1912 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-03T13:08:19.116+05:30  INFO 1912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T13:08:19.693+05:30  WARN 1912 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-03T13:08:19.923+05:30  INFO 1912 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e3878d3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2811a141, org.springframework.security.web.context.SecurityContextHolderFilter@41455b43, org.springframework.security.web.header.HeaderWriterFilter@3f0a820, org.springframework.security.web.authentication.logout.LogoutFilter@43e53c19, com.aster.app.Config.JwtAuthenticationFilter@3957f565, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70207e27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40af19fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40bb2b98, org.springframework.security.web.session.SessionManagementFilter@7081a3a8, org.springframework.security.web.access.ExceptionTranslationFilter@7ea89032, org.springframework.security.web.access.intercept.AuthorizationFilter@1837d712]
+2023-02-03T13:08:20.131+05:30  WARN 1912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-02-03T13:08:20.156+05:30  WARN 1912 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-02-03T13:08:20.161+05:30  INFO 1912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-03T13:08:20.166+05:30  INFO 1912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-03T13:08:20.179+05:30  INFO 1912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-03T13:08:20.186+05:30  INFO 1912 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-03T13:08:20.209+05:30  INFO 1912 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-03T13:08:20.232+05:30 ERROR 1912 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

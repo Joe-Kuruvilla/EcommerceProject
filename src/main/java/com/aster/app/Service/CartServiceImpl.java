@@ -16,7 +16,7 @@ import com.aster.app.Repository.UserRepository;
 
 @Service
 public class CartServiceImpl implements CartServices{
-//	private static final Logger LOGGER = LoggerFactory.getLogger(CartServiceImpl.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(CartServiceImpl.class);
 	
 	@Autowired
 	CartRepo cartRepo;
@@ -25,10 +25,10 @@ public class CartServiceImpl implements CartServices{
 	@Autowired
 	UserRepository userRepo;
 	
-//	public Cart createCart(Cart cart) {
-//		return cartRepo.save(cart);
-//		
-//	}
+	public Cart createCart(Cart cart) {
+		return cartRepo.save(cart);
+		
+	}
 	public boolean createCart(Cart cart, int userId) {
 		cartRepo.save(cart);
 		
@@ -45,13 +45,13 @@ public class CartServiceImpl implements CartServices{
 	
 	public boolean modifyCart(int product_id, int cart_id, int quantity)
 	{
-//		LOGGER.trace("Inside the modify cart method");
+		LOGGER.trace("Inside the modify cart method");
 		
 		Product product=productRepo.findById(product_id).get();
-//		LOGGER.debug("Checing the product "+product);
+		LOGGER.debug("Checing the product "+product);
 		
 		Cart cart=cartRepo.findById(cart_id).get();
-//		LOGGER.debug("Checing the cart "+cart);
+		LOGGER.debug("Checing the cart "+cart);
 		
 		int initialStoreQuantity=product.getQuantity();
 		
@@ -102,7 +102,7 @@ public class CartServiceImpl implements CartServices{
 			cartRepo.save(cart);
 		}
 		
-//		LOGGER.info("Modification Successful");
+		LOGGER.info("Modification Successful");
 		return true;
 	}
 }
