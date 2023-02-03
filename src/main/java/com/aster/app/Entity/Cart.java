@@ -19,6 +19,7 @@ import lombok.NoArgsConstructor;
 public class Cart 
 {
 	@Id
+	@GeneratedValue
 	private int id;
 	@OneToMany
 	private List<Product> products;

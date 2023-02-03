@@ -14,13 +14,10 @@ public class EcommerceProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EcommerceProjectApplication.class, args);
 	}
-	
 	@Bean
 	public LocalValidatorFactoryBean validator(MessageSource ms) {
 	LocalValidatorFactoryBean lvfb=new LocalValidatorFactoryBean();
 	lvfb.setValidationMessageSource(ms);
 	return lvfb;
-	
-	//This bean is created so that we can give custom messages for validation violations
-}
+	}
 }

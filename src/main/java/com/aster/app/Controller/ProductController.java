@@ -20,7 +20,7 @@ import com.aster.app.Service.ProductServiceImpl;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/api/auth/product")
 public class ProductController {
 	@Autowired
 	ProductServiceImpl productServiceImpl;
