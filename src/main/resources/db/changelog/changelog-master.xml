@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+		
+		
+    <changeSet id="1" author="joeK">
+    	<insert tableName="product">
+    		<column name="sku" value="305"/>
+    		<column name="name" value="BadmintonRacket"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="1000"/>
+    		<column name="quantity" value="10"/>
+    	</insert>
+    </changeSet>
+    <changeSet id="2" author="Joee">
+    	<insert tableName="product">
+    		<column name="sku" value="306"/>
+    		<column name="name" value="TTRacket"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="1000"/>
+    		<column name="quantity" value="15"/>
+    	</insert>
+    	<insert tableName="product">
+    		<column name="sku" value="307"/>
+    		<column name="name" value="Football"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="400"/>
+    		<column name="quantity" value="25"/>
+    	</insert>
+    	<insert tableName="product">
+    		<column name="sku" value="308"/>
+    		<column name="name" value="BasketBall"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="600"/>
+    		<column name="quantity" value="10"/>
+    	</insert>
+    	<insert tableName="product">
+    		<column name="sku" value="309"/>
+    		<column name="name" value="Shuttle"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="100"/>
+    		<column name="quantity" value="10"/>
+    	</insert>
+    	<insert tableName="product">
+    		<column name="sku" value="310"/>
+    		<column name="name" value="TennisBall"/>
+    		<column name="description" value="Used to play a sport"/>
+    		<column name="price" value="50"/>
+    		<column name="quantity" value="10"/>
+    	</insert>
+    </changeSet>
+</databaseChangeLog>

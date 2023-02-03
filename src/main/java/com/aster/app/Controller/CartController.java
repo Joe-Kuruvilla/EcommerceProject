@@ -20,15 +20,16 @@ import com.aster.app.Service.CartServiceImpl;
 
 import jakarta.validation.Valid;
 
+//@RequestMapping("/cart")
 @RestController
-@RequestMapping("/cart")
+@RequestMapping("/api/auth/cart")
 public class CartController {
 	@Autowired
 	CartServiceImpl cartServiceImpl;
 	
-	@PostMapping("/createCart")
-	public ResponseEntity<?> newCart(@Valid @RequestBody Cart cart) {
-		return new ResponseEntity<Cart>(cartServiceImpl.createCart(cart), HttpStatus.CREATED); 
+	@PostMapping("/createCart/{userId}")
+	public ResponseEntity<?> newCart(@Valid @RequestBody Cart cart, @Valid @PathVariable int userId) {
+		return new ResponseEntity<Boolean>(cartServiceImpl.createCart(cart,userId), HttpStatus.CREATED); 
 	}
 	@GetMapping("/{cartId}")
 	public ResponseEntity<?> displayAllItems(@Valid @PathVariable int cartId)
